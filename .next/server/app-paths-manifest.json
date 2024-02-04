@@ -1,0 +1,13 @@
+{
+  "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
+  "/api/notification/route": "app/api/notification/route.js",
+  "/api/entry/route": "app/api/entry/route.js",
+  "/api/stock/route": "app/api/stock/route.js",
+  "/api/process/route": "app/api/process/route.js",
+  "/api/invoice/route": "app/api/invoice/route.js",
+  "/admin/entry/page": "app/admin/entry/page.js",
+  "/admin/invoice/page": "app/admin/invoice/page.js",
+  "/admin/process/page": "app/admin/process/page.js",
+  "/admin/invoice/create/page": "app/admin/invoice/create/page.js",
+  "/admin/stock/page": "app/admin/stock/page.js"
+}
