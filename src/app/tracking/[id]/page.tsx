@@ -1,6 +1,6 @@
 'use client';
 
-import { getTrackingInfo } from 'app/lib/apiRequest';
+// import { getTrackingInfo } from 'app/lib/apiRequest';
 import { useParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import {
@@ -14,17 +14,17 @@ const Page = () => {
   const [trackingInfo, setTrackingInfo] = useState([]);
   const queryParams = useParams();
 
-  useEffect(() => {
-    const getTrackingData = async (id) => {
-      const { status, data } = await getTrackingInfo(id);
-      if (status === 200) {
-        setTrackingInfo(data);
-      }
-    };
-    if (queryParams?.id) {
-      getTrackingData(queryParams?.id);
-    }
-  }, [queryParams?.id]);
+  // useEffect(() => {
+  //   const getTrackingData = async (id) => {
+  //     // const { status, data } = await getTrackingInfo(id);
+  //     if (status === 200) {
+  //       setTrackingInfo(data);
+  //     }
+  //   };
+  //   if (queryParams?.id) {
+  //     getTrackingData(queryParams?.id);
+  //   }
+  // }, [queryParams?.id]);
 
   return (
     <div className="w-full py-5">
